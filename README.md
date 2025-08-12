@@ -14,7 +14,7 @@ This is a Shiny web application for interactive quality control (QC) filtering o
 
 This app is hosted using shinyapps and runs entirely in your browser (no R server required).
 
-👉 **Access the app here:** https://ahinsu.shinyapps.io/scrnaseq-thresholdselector/
+👉 **Access the app here:** https://ahinsu.shinyapps.io/scrnaseq-thresholdselector/ OR https://ahinsu-scrnaseq-thresholdselector.share.connect.posit.cloud
 
 
 
