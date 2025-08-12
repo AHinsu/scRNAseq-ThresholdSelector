@@ -16,7 +16,7 @@ This app is hosted using shinyapps and runs entirely in your browser (no R serve
 
 👉 **Access the app here:** https://ahinsu.shinyapps.io/scrnaseq-thresholdselector/
 
-
+## The example RDS file is provided to test the working. 
 
 ## 🛠️ How to Run Locally
 

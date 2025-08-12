@@ -78,13 +78,13 @@ server <- function(input, output, session) {
   
   output$usage_example <- renderTable({
     tibble(
-      CellID = c("AAACCCAAGCAGATAT", "AAACCCACAATATCCG"),
-      sample = factor(c("HGH-31580-sn", "HGH-31580-sn")),
-      source = c("raw", "raw"),
-      nFeature_RNA = c(63.0, 54.0),
-      nCount_RNA = c(259.0, 89.0),
-      percent.mt = c(27.8, -0.00000565),
-      sample_type = c("snRNA-seq", "snRNA-seq")
+      CellID = c("TACGCTCCACCAATTG", "GCGGAAATCAGTCATG", "GGGATGATCCAGCAAT", "TATTCCATCGTACACA", "CTGTAGAGTTGTGGCC"),
+      sample = factor(c("LGC-31758-sn", "LGC-31758-sn", "LGC-31663-sn", "HGH-31828-sn", "LGC-31758-sc")),
+      source = c("raw", "raw", "filtered", "raw", "filtered"),
+      nFeature_RNA = c(163, 135, 166, 905, 5568),
+      nCount_RNA = c(465, 326, 222, 1918, 45036),
+      percent.mt = c(0.430, 0.0000125, 1.35, 2.45, 0.966),
+      sample_type = c("snRNA-seq", "snRNA-seq", "snRNA-seq", "snRNA-seq", "scRNA-seq")
     )
   })
   
