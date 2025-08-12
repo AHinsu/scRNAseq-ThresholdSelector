@@ -121,12 +121,12 @@ server <- function(input, output, session) {
     }
     df <- df %>%
       filter(
-        nCount_RNA > input$min_counts_num,
-        nCount_RNA < input$max_counts_num,
-        nFeature_RNA > input$min_features_num,
-        nFeature_RNA < input$max_features_num,
-        percent.mt > input$min_mito,
-        percent.mt < input$max_mito
+        nCount_RNA >= input$min_counts_num,
+        nCount_RNA <= input$max_counts_num,
+        nFeature_RNA >= input$min_features_num,
+        nFeature_RNA <= input$max_features_num,
+        percent.mt >= input$min_mito,
+        percent.mt <= input$max_mito
       )
     if (input$sample_mode == "Single Sample") {
       req(input$selected_sample)
